@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DoadorService, Doador } from '../doador.service';
+import { DoadorService, Doador } from '../cadastro-doador/doador.service';
 
 @Component({
   selector: 'app-lista-doadores',
