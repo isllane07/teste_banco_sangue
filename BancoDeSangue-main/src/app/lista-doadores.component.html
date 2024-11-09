@@ -1,0 +1,26 @@
+<div class="doadores-list">
+    <h2>Lista de Doadores</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Tipo Sanguíneo</th>
+          <th>Última Doação</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let doador of doadores">
+          <td>{{ doador.nome }}</td>
+          <td>{{ doador.idade }}</td>
+          <td>{{ doador.tipoSanguineo }}</td>
+          <td>{{ doador.dataUltimaDoacao }}</td>
+          <td>
+            <button (click)="removerDoador(doador.codigoPin)">Remover</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
